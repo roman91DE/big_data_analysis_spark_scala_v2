@@ -153,7 +153,7 @@ object TimeUsage extends TimeUsageInterface:
     // more sense for our use case
     // Hint: you can use the `when` and `otherwise` Spark functions
     // Hint: don’t forget to give your columns the expected name with the `as` method
-    val workingStatusProjection: Column = when(col("telfs") <= lit(1) and (col("telfs") < (lit(3))), "working").otherwise("not working").as("working")
+    val workingStatusProjection: Column = when(col("telfs") >= lit(1) and (col("telfs") < (lit(3))), "working").otherwise("not working").as("working")
     val sexProjection: Column = when(col("tesex") === lit(1), "male").otherwise("female").as("sex")
     val ageProjection: Column = when(col("teage").between(15, 22), "young").when(col("teage").between(23, 55), "active").otherwise("elder").as("age")
 
@@ -200,7 +200,15 @@ object TimeUsage extends TimeUsageInterface:
     * and age.
     */
   def timeUsageGrouped(summed: DataFrame): DataFrame =
-    ???
+    val gbCols = List("working", "sex", "age").map(col(_))
+    val df = summed.groupBy(gbCols: _*)
+      .agg(
+        round(avg(col("primaryNeeds")), 1).alias("primaryNeeds"),
+        round(avg(col("work")), 1).alias("work"),
+        round(avg(col("other")), 1).alias("other")
+      )
+    df.orderBy(gbCols: _*).toDF()
+
 
   /** @return
     *   Same as `timeUsageGrouped`, but using a plain SQL query instead
@@ -219,7 +227,18 @@ object TimeUsage extends TimeUsageInterface:
     *   Name of the SQL view to use
     */
   def timeUsageGroupedSqlQuery(viewName: String): String =
-    ???
+    """
+    SELECT 
+      working, sex, age, round(avg(primaryNeeds), 1) AS primaryNeeds, round(avg(work), 1) AS work, round(avg(other), 1) AS other
+    FROM 
+      summed
+    GROUP BY 
+      working, sex, age
+    ORDER BY 
+      working, sex, age
+    """
+
+
 
   /** @return
     *   A `Dataset[TimeUsageRow]` from the “untyped” `DataFrame`

@@ -481,19 +481,13 @@ class TimeUsageSuite extends munit.FunSuite {
 
 
   test("timeUsageSummary computes correct projections and filtering") {
-
-    // Define test data as a Seq of Rows.
-    // Columns: telfs, tesex, teage, p1, p2, w1, o1, o2.
+    // Original test using three rows.
     val data = Seq(
       Row(1, 1, 20, 60, 30, 120, 60, 60),
       Row(3, 2, 30, 30, 30, 60, 30, 30),
       Row(5, 1, 60, 60, 60, 0, 0, 0)
     )
-
-    // Parallelize the data into an RDD.
     val rdd = spark.sparkContext.parallelize(data)
-
-    // Define the schema corresponding to the test data.
     val schema = StructType(
       List(
         StructField("telfs", IntegerType, nullable = false),
@@ -506,30 +500,79 @@ class TimeUsageSuite extends munit.FunSuite {
         StructField("o2", IntegerType, nullable = false)
       )
     )
-
-    // Create the DataFrame from the RDD and schema.
     val df = spark.createDataFrame(rdd, schema)
-
-    // Define the lists of columns that need to be summed.
     val primaryNeedsColumns: List[Column] = List(col("p1"), col("p2"))
     val workColumns: List[Column] = List(col("w1"))
     val otherColumns: List[Column] = List(col("o1"), col("o2"))
 
-    // Invoke the function under test.
     val result: DataFrame = timeUsageSummary(primaryNeedsColumns, workColumns, otherColumns, df)
-
-    // Collect the results.
     val rows = result.collect().toList
 
-    // There should be only two rows (the third row is filtered out).
+    // There should be only two rows (the row with telfs = 5 is filtered out).
     assertEquals(rows.length, 2)
-
-    // Since DataFrame row order might not be guaranteed, create a Set of tuples.
     val expected = Set(
       ("working", "male", "young", 1.5, 2.0, 2.0),
       ("not working", "female", "active", 1.0, 1.0, 1.0)
     )
     val actual = rows.map { row =>
+      (
+        row.getAs[String]("working"),
+        row.getAs[String]("sex"),
+        row.getAs[String]("age"),
+        row.getDouble(3),
+        row.getDouble(4),
+        row.getDouble(5)
+      )
+    }.toSet
+    assertEquals(actual, expected)
+  }
+
+  test("timeUsageSummary edge cases for age and working conditions") {
+    // Create a more comprehensive test with rows covering age and telfs boundaries.
+    val data = Seq(
+      // Row format: (telfs, tesex, teage, p1, p2, w1, o1, o2)
+      // telfs in [1,2] => should be "working"; telfs = 5 => filtered out.
+      // Age boundaries: 15 and 22 -> "young", 23-55 -> "active", >55 -> "elder".
+      Row(1, 1, 15, 60, 0, 30, 30, 0),    // young, male, working; primary=1.0, work=0.5, other=0.5
+      Row(2, 2, 22, 120, 60, 30, 15, 15),  // young, female, working; primary=3.0, work=0.5, other=0.5
+      Row(2, 1, 23, 30, 30, 60, 30, 30),   // active, male, working; primary=1.0, work=1.0, other=1.0
+      Row(2, 2, 55, 30, 30, 60, 30, 30),   // active, female, working; primary=1.0, work=1.0, other=1.0
+      Row(2, 1, 56, 30, 30, 60, 30, 30),   // elder, male, working; primary=1.0, work=1.0, other=1.0
+      Row(5, 1, 30, 30, 30, 60, 30, 30)    // Should be filtered out (telfs = 5)
+    )
+    val rdd = spark.sparkContext.parallelize(data)
+    val schema = StructType(
+      List(
+        StructField("telfs", IntegerType, nullable = false),
+        StructField("tesex", IntegerType, nullable = false),
+        StructField("teage", IntegerType, nullable = false),
+        StructField("p1", IntegerType, nullable = false),
+        StructField("p2", IntegerType, nullable = false),
+        StructField("w1", IntegerType, nullable = false),
+        StructField("o1", IntegerType, nullable = false),
+        StructField("o2", IntegerType, nullable = false)
+      )
+    )
+    val df = spark.createDataFrame(rdd, schema)
+    val primaryNeedsColumns: List[Column] = List(col("p1"), col("p2"))
+    val workColumns: List[Column] = List(col("w1"))
+    val otherColumns: List[Column] = List(col("o1"), col("o2"))
+
+    val result: DataFrame = timeUsageSummary(primaryNeedsColumns, workColumns, otherColumns, df)
+    val rowsResult = result.collect().toList
+
+    // There should be 5 rows since the row with telfs = 5 is filtered out.
+    assertEquals(rowsResult.length, 5)
+
+    val expected = Set(
+      ("working", "male", "young", 1.0, 0.5, 0.5),   // Row 1
+      ("working", "female", "young", 3.0, 0.5, 0.5),   // Row 2
+      ("working", "male", "active", 1.0, 1.0, 1.0),    // Row 3
+      ("working", "female", "active", 1.0, 1.0, 1.0),  // Row 4
+      ("working", "male", "elder", 1.0, 1.0, 1.0)      // Row 5
+    )
+
+    val actual = rowsResult.map { row =>
       (
         row.getAs[String]("working"),
         row.getAs[String]("sex"),
