@@ -1,0 +1,29 @@
+error id: file://<WORKSPACE>/src/main/scala/com/example/pairrdds/SparkApp.scala:[237..243) in Input.VirtualFile("file://<WORKSPACE>/src/main/scala/com/example/pairrdds/SparkApp.scala", "package com.example.pairRdds
+
+import org.apache.spark.{SparkConf, SparkContext}
+
+
+object Spark {
+  val conf = new SparkConf()
+    .setMaster("local")
+    .setAppName("my awesome app")
+
+  val context = new SparkContext(conf)
+}
+
+
+object 
+
+object SparkApp extends App{
+  val spark = Spark.context
+}
+
+
+")
+file://<WORKSPACE>/file:<WORKSPACE>/src/main/scala/com/example/pairrdds/SparkApp.scala
+file://<WORKSPACE>/src/main/scala/com/example/pairrdds/SparkApp.scala:17: error: expected identifier; obtained object
+object SparkApp extends App{
+^
+#### Short summary: 
+
+expected identifier; obtained object

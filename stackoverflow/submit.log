@@ -1,0 +1,211 @@
+[info] welcome to sbt 1.8.2 (Homebrew Java 11.0.26)
+[info] loading settings for project stackoverflow-build-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project/project
+[info] loading settings for project stackoverflow-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project
+[success] Generated .bloop/stackoverflow-build-build.json
+[success] Total time: 1 s, completed Feb 18, 2025, 8:50:06 PM
+[info] loading settings for project stackoverflow-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project
+[success] Generated .bloop/stackoverflow-build.json
+[success] Total time: 1 s, completed Feb 18, 2025, 8:50:07 PM
+[info] loading settings for project stackoverflow from assignment.sbt,build.sbt ...
+[info] set current project to bigdata-stackoverflow (in build file:/Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/)
+[info] Attempting to submit "stackoverflow" assignment in "scala-spark-big-data" course
+[info] Using:
+[info] - email: rohoehn123@gmail.com
+[info] - submit token: kYClRBJQLWV5mokc
+[info] Connecting to Coursera...
+[info] Successfully connected to Coursera. (Status 201)
+[info] 
+[info] Assignment submitted successfully!
+[info] 
+[info] You can see how you scored by going to:
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/ZyW3H/
+[info] or (for premium learners):
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/a9fE2
+[info]                        
+[info] and clicking on "My Submission".
+[success] Total time: 2 s, completed Feb 18, 2025, 8:50:09 PM
+[info] welcome to sbt 1.8.2 (Homebrew Java 11.0.26)
+[info] loading settings for project stackoverflow-build-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project/project
+[info] loading settings for project stackoverflow-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project
+[success] Generated .bloop/stackoverflow-build-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 8:20:02 PM
+[info] loading settings for project stackoverflow-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project
+[success] Generated .bloop/stackoverflow-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 8:20:03 PM
+[info] loading settings for project stackoverflow from assignment.sbt,build.sbt ...
+[info] set current project to bigdata-stackoverflow (in build file:/Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/)
+[info] Attempting to submit "stackoverflow" assignment in "scala-spark-big-data" course
+[info] Using:
+[info] - email: rohoehn123@gmail.com
+[info] - submit token: rNoqdcODP0aU6Vxg
+[info] Connecting to Coursera...
+[info] Successfully connected to Coursera. (Status 201)
+[info] 
+[info] Assignment submitted successfully!
+[info] 
+[info] You can see how you scored by going to:
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/ZyW3H/
+[info] or (for premium learners):
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/a9fE2
+[info]                        
+[info] and clicking on "My Submission".
+[success] Total time: 2 s, completed Feb 20, 2025, 8:20:06 PM
+[info] welcome to sbt 1.8.2 (Homebrew Java 11.0.26)
+[info] loading settings for project stackoverflow-build-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project/project
+[info] loading settings for project stackoverflow-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project
+[success] Generated .bloop/stackoverflow-build-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 9:16:28 PM
+[info] loading settings for project stackoverflow-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project
+[success] Generated .bloop/stackoverflow-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 9:16:29 PM
+[info] loading settings for project stackoverflow from assignment.sbt,build.sbt ...
+[info] set current project to bigdata-stackoverflow (in build file:/Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/)
+[info] compiling 1 Scala source to /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/target/scala-3.3.0/classes ...
+[info] done compiling
+[info] Attempting to submit "stackoverflow" assignment in "scala-spark-big-data" course
+[info] Using:
+[info] - email: rohoehn123@gmail.com
+[info] - submit token: XXw03HO41P5ZVDv5
+[info] Connecting to Coursera...
+[info] Successfully connected to Coursera. (Status 201)
+[info] 
+[info] Assignment submitted successfully!
+[info] 
+[info] You can see how you scored by going to:
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/ZyW3H/
+[info] or (for premium learners):
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/a9fE2
+[info]                        
+[info] and clicking on "My Submission".
+[success] Total time: 5 s, completed Feb 20, 2025, 9:16:35 PM
+[info] welcome to sbt 1.8.2 (Homebrew Java 11.0.26)
+[info] loading settings for project stackoverflow-build-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project/project
+[info] loading settings for project stackoverflow-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project
+[success] Generated .bloop/stackoverflow-build-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 9:26:13 PM
+[info] loading settings for project stackoverflow-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project
+[success] Generated .bloop/stackoverflow-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 9:26:14 PM
+[info] loading settings for project stackoverflow from assignment.sbt,build.sbt ...
+[info] set current project to bigdata-stackoverflow (in build file:/Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/)
+[info] compiling 1 Scala source to /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/target/scala-3.3.0/classes ...
+[info] done compiling
+[info] Attempting to submit "stackoverflow" assignment in "scala-spark-big-data" course
+[info] Using:
+[info] - email: rohoehn123@gmail.com
+[info] - submit token: XXw03HO41P5ZVDv5
+[info] Connecting to Coursera...
+[info] Successfully connected to Coursera. (Status 201)
+[info] 
+[info] Assignment submitted successfully!
+[info] 
+[info] You can see how you scored by going to:
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/ZyW3H/
+[info] or (for premium learners):
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/a9fE2
+[info]                        
+[info] and clicking on "My Submission".
+[success] Total time: 5 s, completed Feb 20, 2025, 9:26:20 PM
+[info] welcome to sbt 1.8.2 (Homebrew Java 11.0.26)
+[info] loading settings for project stackoverflow-build-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project/project
+[info] loading settings for project stackoverflow-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project
+[success] Generated .bloop/stackoverflow-build-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 9:34:04 PM
+[info] loading settings for project stackoverflow-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project
+[success] Generated .bloop/stackoverflow-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 9:34:05 PM
+[info] loading settings for project stackoverflow from assignment.sbt,build.sbt ...
+[info] set current project to bigdata-stackoverflow (in build file:/Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/)
+[info] compiling 1 Scala source to /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/target/scala-3.3.0/classes ...
+[info] done compiling
+[info] Attempting to submit "stackoverflow" assignment in "scala-spark-big-data" course
+[info] Using:
+[info] - email: rohoehn123@gmail.com
+[info] - submit token: XXw03HO41P5ZVDv5
+[info] Connecting to Coursera...
+[info] Successfully connected to Coursera. (Status 201)
+[info] 
+[info] Assignment submitted successfully!
+[info] 
+[info] You can see how you scored by going to:
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/ZyW3H/
+[info] or (for premium learners):
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/a9fE2
+[info]                        
+[info] and clicking on "My Submission".
+[success] Total time: 5 s, completed Feb 20, 2025, 9:34:10 PM
+[info] welcome to sbt 1.8.2 (Homebrew Java 11.0.26)
+[info] loading settings for project stackoverflow-build-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project/project
+[info] loading settings for project stackoverflow-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project
+[success] Generated .bloop/stackoverflow-build-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 9:36:52 PM
+[info] loading settings for project stackoverflow-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project
+[success] Generated .bloop/stackoverflow-build.json
+[success] Total time: 1 s, completed Feb 20, 2025, 9:36:53 PM
+[info] loading settings for project stackoverflow from assignment.sbt,build.sbt ...
+[info] set current project to bigdata-stackoverflow (in build file:/Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/)
+[info] compiling 1 Scala source to /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/target/scala-3.3.0/classes ...
+[info] done compiling
+[info] Attempting to submit "stackoverflow" assignment in "scala-spark-big-data" course
+[info] Using:
+[info] - email: rohoehn123@gmail.com
+[info] - submit token: XXw03HO41P5ZVDv5
+[info] Connecting to Coursera...
+[info] Successfully connected to Coursera. (Status 201)
+[info] 
+[info] Assignment submitted successfully!
+[info] 
+[info] You can see how you scored by going to:
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/ZyW3H/
+[info] or (for premium learners):
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/a9fE2
+[info]                        
+[info] and clicking on "My Submission".
+[success] Total time: 5 s, completed Feb 20, 2025, 9:36:59 PM
+[info] welcome to sbt 1.8.2 (Homebrew Java 11.0.26)
+[info] loading settings for project stackoverflow-build-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project/project
+[info] loading settings for project stackoverflow-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project/project
+[success] Generated .bloop/stackoverflow-build-build.json
+[success] Total time: 1 s, completed Feb 21, 2025, 10:11:29 AM
+[info] loading settings for project stackoverflow-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/project
+[success] Generated .bloop/stackoverflow-build.json
+[success] Total time: 1 s, completed Feb 21, 2025, 10:11:30 AM
+[info] loading settings for project stackoverflow from assignment.sbt,build.sbt ...
+[info] set current project to bigdata-stackoverflow (in build file:/Users/roman/Repos/big_data_analysis_spark_scala/stackoverflow/)
+[info] Attempting to submit "stackoverflow" assignment in "scala-spark-big-data" course
+[info] Using:
+[info] - email: rohoehn123@gmail.com
+[info] - submit token: vkEBzE4m38fTpi45
+[info] Connecting to Coursera...
+[info] Successfully connected to Coursera. (Status 201)
+[info] 
+[info] Assignment submitted successfully!
+[info] 
+[info] You can see how you scored by going to:
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/ZyW3H/
+[info] or (for premium learners):
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/a9fE2
+[info]                        
+[info] and clicking on "My Submission".
+[success] Total time: 3 s, completed Feb 21, 2025, 10:11:33 AM

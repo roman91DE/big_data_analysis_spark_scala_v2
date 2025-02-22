@@ -1,0 +1,60 @@
+[info] welcome to sbt 1.8.2 (Eclipse Adoptium Java 11.0.26)
+[info] loading settings for project wikipedia-build-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/wikipedia/project/project/project
+[info] loading settings for project wikipedia-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/wikipedia/project/project
+[success] Generated .bloop/wikipedia-build-build.json
+[success] Total time: 1 s, completed Feb 9, 2025, 10:28:55 AM
+[info] loading settings for project wikipedia-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/wikipedia/project
+[success] Generated .bloop/wikipedia-build.json
+[success] Total time: 1 s, completed Feb 9, 2025, 10:28:56 AM
+[info] loading settings for project wikipedia from assignment.sbt,build.sbt ...
+[info] set current project to bigdata-wikipedia (in build file:/Users/roman/Repos/big_data_analysis_spark_scala/wikipedia/)
+[info] Attempting to submit "wikipedia" assignment in "scala-spark-big-data" course
+[info] Using:
+[info] - email: rohoehn123@gmail.com
+[info] - submit token: dCbvdnBFbJnYZDof
+[info] Connecting to Coursera...
+[info] Successfully connected to Coursera. (Status 201)
+[info] 
+[info] Assignment submitted successfully!
+[info] 
+[info] You can see how you scored by going to:
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/GljPd/
+[info] or (for premium learners):
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/FaEtp
+[info]                        
+[info] and clicking on "My Submission".
+[success] Total time: 2 s, completed Feb 9, 2025, 10:28:59 AM
+[info] welcome to sbt 1.8.2 (Homebrew Java 11.0.26)
+[info] loading settings for project wikipedia-build-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/wikipedia/project/project/project
+[info] loading settings for project wikipedia-build-build from metals.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/wikipedia/project/project
+[success] Generated .bloop/wikipedia-build-build.json
+[success] Total time: 1 s, completed Feb 15, 2025, 7:23:08 PM
+[info] loading settings for project wikipedia-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+[info] loading project definition from /Users/roman/Repos/big_data_analysis_spark_scala/wikipedia/project
+[success] Generated .bloop/wikipedia-build.json
+[success] Total time: 1 s, completed Feb 15, 2025, 7:23:09 PM
+[info] loading settings for project wikipedia from assignment.sbt,build.sbt ...
+[info] set current project to bigdata-wikipedia (in build file:/Users/roman/Repos/big_data_analysis_spark_scala/wikipedia/)
+[info] compiling 1 Scala source to /Users/roman/Repos/big_data_analysis_spark_scala/wikipedia/target/scala-3.3.4/classes ...
+[info] done compiling
+[info] Attempting to submit "wikipedia" assignment in "scala-spark-big-data" course
+[info] Using:
+[info] - email: rohoehn123@gmail.com
+[info] - submit token: QKkJSx5f9i18rFFf
+[info] Connecting to Coursera...
+[info] Successfully connected to Coursera. (Status 201)
+[info] 
+[info] Assignment submitted successfully!
+[info] 
+[info] You can see how you scored by going to:
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/GljPd/
+[info] or (for premium learners):
+[info] https://www.coursera.org/learn/scala-spark-big-data/programming/FaEtp
+[info]                        
+[info] and clicking on "My Submission".
+[success] Total time: 5 s, completed Feb 15, 2025, 7:23:14 PM

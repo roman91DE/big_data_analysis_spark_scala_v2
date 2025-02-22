@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+set -o pipefail
+
+TOKEN="vkEBzE4m38fTpi45"
+
+# Run sbt with the submit command
+sbt "submit rohoehn123@gmail.com $TOKEN" >> submit.log 2>> submit_err.log
